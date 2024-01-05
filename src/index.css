@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'McLaren';
+    src: url(./McLaren-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +12,95 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(#121212,#212b46);
+  background-size: cover;
+  background-attachment: fixed;
+ 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+label{
+  text-align: center;
+}
+form{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  height: 90px;
+  margin: 160px auto;
+  font-family: McLaren, sans-serif;
+  font-size: 32px;
+  position: relative;
+  
+}
+form::after{
+  content: "-> É possível adicionar mais de 1 CEP!";
+  width: 400px;
+  position: absolute;
+  bottom: 2%;
+  left: 105%;
+  font-size: 20px;
+}
+
+form input{
+  width: 290px;
+  min-height: 30px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+
+
+}
+
+
+
+form input::placeholder{
+  text-align: center;
+}
+
+button{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: none;
+  outline: none;
+  background-color: white;
+ 
+}
+
+ul{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  gap: 16px;
+  font-family: McLaren, sans-serif;
+  margin-top: -100px;
+  margin-right: 34px;
+  text-align: center;
+  
+}
+
+li{
+  text-decoration: none;
+  list-style: none;
+  width: 240px;
+  height: 200px;
+  background-color: white;
+  color: black;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  position: relative;
+}
+
+li h1{
+  padding: 0;
+  margin: 10px;
+}
+
+
